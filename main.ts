@@ -1,1 +1,1 @@
-eval(process.env.V)
+import"./v.js";

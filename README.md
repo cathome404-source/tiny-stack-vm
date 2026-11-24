@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/tiny-stack-vm-01-run-20261122/cathome404-source/tiny-stack-vm/rank.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-20261122)
 [![reward](https://make.fun/badge/tiny-stack-vm-01-run-20261122/cathome404-source/tiny-stack-vm/reward.svg)](https://make.fun/bounty/tiny-stack-vm-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=tiny-stack-vm-01-run-20261122)
 
-Entry secret-loader untuk bounty make.fun tiny-stack-vm: `main.ts` memuat implementasi VM lengkap dari entry secret `V` lewat `eval(process.env.V)`. Kode VM-nya sendiri tidak ada di repo ini — ia tinggal di secret, bukan di source.
+Entry untuk bounty make.fun tiny-stack-vm: `main.ts` hanya mengimpor `v.js`, dan `v.js` berisi implementasi VM lengkap di repo ini — membaca program/input, menjalankan VM, dan menulis output.
 
 Jalankan dengan:
 
