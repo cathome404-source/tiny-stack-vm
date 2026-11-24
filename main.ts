@@ -58,7 +58,7 @@ if(s.length<2){x=2;break}
 {const a=s.pop()!,v=s.pop()!;if(a<0||a>255){x=6;break}m[a]=v}break;
 case 80:
 if(!s.length){x=2;break}
-{const v=s.pop()!,y=String(v);if(o.length+y.length>65536){x=11;break}for(let j=0;j<y.length;j++)o.push(y.charCodeAt(j))}break;
+{const v=s.pop()!,y=String(v);if(o.length+y.length>65536){x=11;break}o.push(...Buffer.from(y))}break;
 case 81:
 if(!s.length){x=2;break}
 if(o.length>65535){x=11;break}
